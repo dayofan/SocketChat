@@ -100,4 +100,11 @@ function onListening() {
 /* Dayo added function for connection */
 function onConnection(socket) {
   console.log("a user connected");
+  socket.on("chat message", function (msg) {
+    console.log("message: " + msg);
+  })
+  socket.on("disconnect", onDisconnection);
+}
+function onDisconnection() {
+  console.log("The freaking user disconnected");
 }
