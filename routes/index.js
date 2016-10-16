@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Socket.IO chat' });
+  res.render('index', { title: "Dayo's chat room" });
 });
 
 module.exports = router;
